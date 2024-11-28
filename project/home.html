@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Listings - Home Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKRQUGBo1Q0zAHg-YBYasuER1sIgGocuVMLg&s" alt="Home Finder Logo">
+                <span class="brand-name">Home Finder</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="profile.php"><i class="fas fa-user"></i> My Profile</a></li>
+                    <li><a href="saved-pictures.html"><i class="fas fa-heart"></i> Saved</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="property-listings-page">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Find Your Dream Home</h1>
+                <p>Discover the perfect property from our extensive collection of premium listings</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <form action="search.php" method="GET">
+                <div class="search-container">
+                    <div class="search-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="query" placeholder="Enter location or keywords...">
+                    </div>
+                    <div class="search-filters">
+                        <select name="property-type">
+                            <option value="all">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="house">House</option>
+                            <option value="villa">Villa</option>
+                        </select>
+                        <select name="bedrooms">
+                            <option value="any">Any Beds</option>
+                            <option value="1">1 Bed</option>
+                            <option value="2">2 Beds</option>
+                            <option value="3">3 Beds</option>
+                            <option value="4">4+ Beds</option>
+                        </select>
+                        <select name="price-range">
+                            <option value="any">Any Price</option>
+                            <option value="0-300000">$0 - $300,000</option>
+                            <option value="300001-600000">$300,001 - $600,000</option>
+                            <option value="600001-1000000">$600,001 - $1,000,000</option>
+                            <option value="1000001+">$1,000,001+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-button">Search Properties</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="featured-listings">
+            <h2>Featured Properties</h2>
+            <div class="property-grid">
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Modern Apartment">
+                        <span class="property-tag">Featured</span>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="property-info">
+                        <h3>Modern Apartment</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Main St, Cityville</p>
+                        </div>
+                        <div class="property-price">$300,000</div>
+                        <div class="property-stats">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,500 sqft</span>
+                        </div>
+                        <a href="view-details.html?id=modern-apartment" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Luxury Villa">
+                        <span class="property-tag">Premium</span>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="property-info">
+                        <h3>Luxury Villa</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>456 Grand Ave, Suburbia</p>
+                        </div>
+                        <div class="property-price">$1,200,000</div>
+                        <div class="property-stats">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                        </div>
+                        <a href="view-details.html?id=luxury-villa" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagination">
+            <button class="prev-btn" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+            <div class="page-numbers">
+                <span class="current">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+            <button class="next-btn">Next <i class="fas fa-chevron-right"></i></button>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 Home Finder. All Rights Reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

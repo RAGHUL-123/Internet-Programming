@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>DOM Manipulation</title> 
+</head> 
+<body> 
+  <div id="container"> 
+    <h1>Welcome to DOM Manipulation!</h1> 
+    <p>This is a paragraph.</p> 
+    <button id="changeTextButton">Change Text</button> 
+  </div> 
+  <script> 
+    // Task 1: Change text when the button is clicked
+    document.getElementById("changeTextButton").addEventListener("click", function() {
+      document.querySelector("h1").textContent = "DOM Manipulation Example"; // Change <h1> text
+      document.querySelector("p").textContent = "New paragraph text"; // Change <p> text
+    });
+
+    // Task 2: Change background color of <body> when the page loads
+    window.addEventListener("load", function() {
+      document.body.style.backgroundColor = getRandomColor(); // Set random background color
+    });
+
+    // Task 3: Change button background color on hover
+    document.getElementById("changeTextButton").addEventListener("mouseenter", function() {
+      this.style.backgroundColor = getRandomColor(); // Set random background color when mouse hovers
+    });
+
+    // Helper function to generate a random color
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script> 
+</body> 
+</html>

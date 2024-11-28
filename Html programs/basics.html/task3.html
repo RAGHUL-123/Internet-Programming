@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Environment Overview</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
+        .container { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dev Environment Overview</h1>
+
+        <h2>LAMP Stack</h2>
+        <ul>
+            <li><strong>Linux</strong> - OS</li>
+            <li><strong>Apache</strong> - Web server</li>
+            <li><strong>MySQL</strong> - Database</li>
+            <li><strong>PHP</strong> - Scripting language</li>
+        </ul>
+        <pre><code>sudo apt update
+sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql
+sudo systemctl start apache2</code></pre>
+
+        <h2>WAMP Stack</h2>
+        <ul>
+            <li><strong>Windows</strong> - OS</li>
+            <li><strong>Apache</strong> - Web server</li>
+            <li><strong>MySQL</strong> - Database</li>
+            <li><strong>PHP</strong> - Scripting language</li>
+        </ul>
+        <ol>
+            <li>Download <a href="https://www.wampserver.com/en/" target="_blank">WAMP</a>.</li>
+            <li>Run installer and start WAMP.</li>
+            <li>Visit <code>http://localhost/</code>.</li>
+        </ol>
+
+        <h2>Apache's Role</h2>
+        <p>Apache handles requests, serves pages, and integrates PHP with MySQL.</p>
+    </div>
+</body>
+</html>

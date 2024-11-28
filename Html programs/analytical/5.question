@@ -1,0 +1,54 @@
+
+5) Assume you are optimizing network buffer settings for a high-traffic web server to minimize latency and maximize throughput. You have collected the following data: 
+
+1. The average time for a request to traverse the network from the client to the server is 50 milliseconds. 
+2. The average processing time for each request on the server is 100 milliseconds. 
+3. The server has a receive buffer size of 64 KB and a transmit buffer size of 32 KB. 
+4. Each client connection requires 8 KB of buffer space for both receiving and transmitting data. 
+Based on this information, calculate the following: 
+a) The total time spent in network transit for a request before it starts being processed on the server. 
+b) The total buffer space required for 100 concurrent client connections. 
+c) If you want to reduce the total buffer space required for 100 concurrent client connections by 20%, what adjustments can you make sizes, assuming the buffer proportions remain the same? 
+
+ANSWER:;
+     
+      
+      Given Data:
+Network Transit Time: 50 milliseconds (time for a request to travel from the client to the server).
+Server Processing Time: 100 milliseconds (time the server takes to process a request).
+Buffer Sizes:
+Receive Buffer Size: 64 KB.
+Transmit Buffer Size: 32 KB.
+Per Client Buffer Usage:
+8 KB for receiving data.
+8 KB for transmitting data (total 16 KB per client).
+a) The Total Time Spent in Network Transit for a Request Before It Starts Being Processed on the Server
+This is simply the time taken for the request to travel from the client to the server.
+
+Network Transit Time = 50 milliseconds.
+b) The Total Buffer Space Required for 100 Concurrent Client Connections
+For each client connection, the total buffer space is:
+
+Receive Buffer: 8 KB per client.
+Transmit Buffer: 8 KB per client.
+Total Buffer per Client = 8 KB (receive) + 8 KB (transmit) = 16 KB per client.
+For 100 concurrent client connections:
+
+Total Buffer Space for 100 Clients = 100 * 16 KB = 1600 KB (or 1.6 MB).
+c) Adjustments to Reduce the Total Buffer Space by 20%
+To reduce the total buffer space by 20%, you need to reduce the total buffer space required for 100 concurrent clients to 80% of the current total.
+
+Current Buffer Space: 1600 KB.
+Desired Buffer Space = 1600 KB * 0.8 = 1280 KB.
+This means you need to reduce the buffer usage by 320 KB (1600 KB - 1280 KB).
+
+Since the buffer sizes for receiving and transmitting data are proportionate (both are 8 KB per client), reducing the buffer sizes proportionally will maintain the ratio. Therefore, the total buffer space per client should be reduced by 20%.
+
+New Buffer per Client = 16 KB * 0.8 = 12.8 KB per client.
+This means you would:
+
+Receive Buffer per Client = 8 KB * 0.8 = 6.4 KB.
+Transmit Buffer per Client = 8 KB * 0.8 = 6.4 KB.
+For 100 clients:
+
+Total Buffer Space for 100 Clients = 100 * 12.8 KB = 1280 KB (as desired).

@@ -1,0 +1,589 @@
+/* Apply a full-page background image for index.html */
+.index-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-image: url('https://wallpapers.com/images/hd/modern-extravagant-house-3elekqaave0kg6mr.jpg'); /* Background for index.html */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+/* Apply a different full-page background image for home.html */
+.home-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg?cs=srgb&dl=pexels-sebastians-731082.jpg&fm=jpg'); /* Background for home.html */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+/* Center the login container vertically and horizontally */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for readability */
+}
+
+/* Style the login container box with transparency */
+/* Transparent Login Container Box (Full Transparency) */
+.login-container {
+    background: rgba(255, 255, 255, 0); /* Fully transparent */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(0px); /* Optional blur effect */
+}
+
+/* Change color of Username and Password labels */
+.login-container label {
+    color: #4CAF50; /* Green color */
+    font-weight: bold; /* Bold text */
+}
+
+/* Change color for Username label */
+.login-container label[for="username"] {
+    color: #FF5733; /* Red color for username label */
+}
+
+/* Change color for Password label */
+.login-container label[for="password"] {
+    color: #0000FF; /* Blue color for password label */
+}
+
+/* Bold styling for the logo */
+.login-container .logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Bold and larger heading */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #dfdada;
+    font-weight: bold; /* Make text bold */
+}
+
+/* Form styling with bold labels */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Transparent input fields with bold text */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: #333; /* Text color */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Button styling */
+.login-container button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; /* Make button text bold */
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+/* Bold and styled paragraph with link */
+.login-container p {
+    margin-top: 15px;
+    font-weight: bold; /* Make text bold */
+    color:#ddd;
+}
+
+.login-container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Apply a different background image for the registration page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-image: url('https://wallpapers.com/images/hd/beautiful-interior-design-3elekqaave0kg6mr.jpg'); /* New background for registration page */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+/* Center the registration container vertically and horizontally */
+.register-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for readability */
+}
+
+/* Style the registration container box with transparency */
+.register-container {
+    background: rgba(255, 255, 255, 0); /* Fully transparent */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(0px); /* Optional blur effect */
+}
+
+/* Change color of Username and Password labels */
+.register-container label {
+    color: #ddd; /* Green color */
+    font-weight: bold; /* Bold text */
+}
+
+/* Change color for Username label */
+.register-container label[for="username"] {
+    color: #ddd; /* Red color for username label */
+}
+
+/* Change color for Email label */
+.register-container label[for="email"] {
+    color: #ddd; /* Blue color for email label */
+}
+
+/* Change color for Mobile label */
+.register-container label[for="mobile"] {
+    color: #ddd; /* Purple color for mobile label */
+}
+
+/* Change color for Address label */
+.register-container label[for="address"] {
+    color: #ddd; /* Tomato color for address label */
+}
+
+/* Change color for Age label */
+.register-container label[for="age"] {
+    color: #ddd; /* SeaGreen color for age label */
+}
+
+/* Change color for Profession label */
+.register-container label[for="profession"] {
+    color: #ddd; /* Gold color for profession label */
+}
+
+/* Bold styling for the logo */
+.register-container .logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Bold and larger heading */
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #dfdada;
+    font-weight: bold; /* Make text bold */
+}
+
+/* Form styling with bold labels */
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Transparent input fields with bold text */
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="tel"],
+.register-container input[type="number"],
+.register-container select {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: #333; /* Text color */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Button styling */
+.register-container button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; /* Make button text bold */
+}
+
+.register-container button:hover {
+    background-color: #45a049;
+}
+
+/* Bold and styled paragraph with link */
+.register-container p {
+    margin-top: 15px;
+    font-weight: bold; /* Make text bold */
+    color: #f4efee;
+}
+
+.register-container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Slightly transparent background */
+    color: white;
+}
+
+header .logo img {
+    width: 80px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome section */
+.welcome-section h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.welcome-section p {
+    color: #bb4848;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Search and Filter Section */
+.search-section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+}
+
+.search-section .search-bar input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.search-section .search-bar button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-section .filters select {
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Property Listings Section */
+.property-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.property-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 8px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.property-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.property-card h3 {
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.property-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.property-card button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.property-card button:hover {
+    background-color: #45a049;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pagination button:hover {
+    background-color: #45a049;
+}
+
+.pagination span {
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+
+
+
+button a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px; /* Ensures button text is vertically centered */
+}
+
+
+/* Center the profile container vertically and horizontally */
+.profile-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for readability */
+}
+
+/* Style the profile container box with transparency */
+.profile-container {
+    background: rgba(255, 255, 255, 0); /* Fully transparent */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    backdrop-filter: blur(0px); /* Optional blur effect */
+}
+
+/* Bold and larger heading */
+.profile-container h1 {
+    margin-bottom: 20px;
+    color: #dfdada;
+    font-weight: bold; /* Make text bold */
+}
+
+/* Profile details list styling */
+.profile-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Profile detail box */
+.profile-container ul li {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border: 1px solid #ddd; /* Light border to create box effect */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for labels */
+.profile-container li strong {
+    color: #4CAF50; /* Green for labels */
+}
+
+/* Styling for values */
+.profile-container li span {
+    color: #333;
+    font-weight: normal; /* Normal text weight for values */
+}
+
+/* Button styling for logout */
+.profile-container .btn {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; /* Make sure the link looks like a button */
+}
+
+.profile-container .btn:hover {
+    background-color: #45a049;
+}
+
+
+
+.contact-agents-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.agent-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.agent-card {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+.contact-agents-page {
+    background-image: url('https://via.placeholder.com/1600x900'); /* Replace with the actual URL of your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; /* Adjust text color for readability */
+}
+
+.contact-agents-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    border-radius: 10px;
+}
+
+.contact-form label, 
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea, 
+.contact-form button {
+    color: #000; /* Adjust input and button colors for contrast */
+}

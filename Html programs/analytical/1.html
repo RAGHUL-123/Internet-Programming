@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<title>Audio Editor</title> 
+<html> 
+<head> 
+    <audio id="myAudio" controls> 
+        <source src="audio.mp3" type="audio/mpeg"> 
+        Your browser does not support the audio tag.
+    </audio> 
+</head> 
+<body> 
+    <div>
+        <label for="startTime">Start Time:</label>
+        <input type="number" id="startTime" value="0"> <!-- Start time in seconds -->
+        <label for="endTime">End Time:</label>
+        <input type="number" id="endTime" value="10"> <!-- End time in seconds -->
+        <button id="cutButton">Cut Audio</button> 
+    </div> 
+
+    <script> 
+        // Get elements from the DOM
+        const audioElement = document.getElementById('myAudio');
+        const startTimeInput = document.getElementById('startTime');
+        const endTimeInput = document.getElementById('endTime');
+        const cutButton = document.getElementById('cutButton');
+
+        // Event listener for the 'Cut Audio' button
+        cutButton.addEventListener('click', function() {
+            // Parse the start and end times from the input fields
+            const startTime = parseFloat(startTimeInput.value);
+            const endTime = parseFloat(endTimeInput.value);
+
+            // Validate the start and end times
+            if (isNaN(startTime) || isNaN(endTime)) {
+                alert('Please enter valid numbers for start and end times.');
+                return;
+            }
+
+            if (startTime >= endTime) {
+                alert('Start time must be less than end time.');
+                return;
+            }
+
+            // Set the audio's current time to the start time
+            audioElement.currentTime = startTime;
+            audioElement.play();  // Start playing the audio
+
+            // Stop the audio once the end time is reached
+            audioElement.ontimeupdate = function() {
+                if (audioElement.currentTime >= endTime) {
+                    audioElement.pause();  // Stop playing the audio
+                    audioElement.currentTime = startTime;  // Reset to start time
+                }
+            };
+        });
+    </script> 
+</body> 
+</html>

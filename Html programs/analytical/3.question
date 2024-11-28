@@ -1,0 +1,89 @@
+3) Suppose you have developed a Java Servlet that handles user registration for a website. The servlet is deployed on a Tomcat server with the following configuration: 
+1. The servlet container (Tomcat) is configured to maintain a pool of 20 servlet instances. 
+2. Each servlet instance takes an average of 100 milliseconds to initialize. 
+3. Once initialized, each servlet instance can handle up to 5 concurrent requests. 
+4. The servlet container is configured to timeout any request that takes longer than 500 milliseconds to process. 
+Given this information, calculate the following: 
+a) The total time taken to initialize all servlet instances in the pool. 
+b) The maximum number of concurrent user registrations that can be handled by the servlet at any given time. 
+c) If there are 1000 concurrent user registration requests, how many servlet instances will be needed to handle them efficiently? 
+
+
+ANSWER:
+
+a) The total time taken to initialize all servlet instances in the pool
+To calculate the total time required to initialize all 20 servlet instances, we can simply multiply the time to initialize each servlet by the number of instances.
+
+Time to initialize one servlet instance = 100 milliseconds
+Total number of instances = 20
+Thus, the total time to initialize all servlet instances is:
+
+Total time
+=
+100
+ 
+ms
+×
+20
+=
+2000
+ 
+milliseconds
+Total time=100ms×20=2000milliseconds
+So, the total time to initialize all servlet instances is 2000 milliseconds or 2 seconds.
+
+b) The maximum number of concurrent user registrations that can be handled by the servlet at any given time
+Each initialized servlet instance can handle up to 5 concurrent requests. Given that the servlet container has a pool of 20 servlet instances, the maximum number of concurrent requests that can be handled at any given time is:
+
+Max concurrent requests
+=
+20
+ 
+instances
+×
+5
+ 
+concurrent requests per instance
+=
+100
+ 
+concurrent requests
+Max concurrent requests=20instances×5concurrent requests per instance=100concurrent requests
+Thus, the maximum number of concurrent user registrations that can be handled at any given time is 100 requests.
+
+c) If there are 1000 concurrent user registration requests, how many servlet instances will be needed to handle them efficiently?
+To determine how many servlet instances are needed to handle 1000 concurrent requests efficiently, we need to calculate how many instances are required to handle all 1000 requests, given that each instance can handle 5 concurrent requests.
+
+Concurrent requests = 1000
+Requests handled by each instance = 5
+The number of servlet instances required to handle 1000 requests is:
+
+Required instances
+=
+Concurrent requests
+Requests handled by each instance
+=
+1000
+5
+=
+200
+ 
+instances
+Required instances= 
+Requests handled by each instance
+Concurrent requests
+​
+ = 
+5
+1000
+​
+ =200instances
+Thus, to handle 1000 concurrent requests efficiently, 200 servlet instances would be needed.
+
+Summary of answers:
+a) The total time taken to initialize all servlet instances is 2000 milliseconds (or 2 seconds).
+
+b) The maximum number of concurrent user registrations that can be handled by the servlet at any given time is 100 requests.
+
+c) If there are 1000 concurrent user registration requests, 200 servlet instances would be needed to handle them efficiently.
+

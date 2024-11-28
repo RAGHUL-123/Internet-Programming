@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Showroom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header 
+            background: #ffff00;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .brands {
+            width: 200px;
+            padding: 10px;
+            background: #f4f4f4;
+        }
+        .models {
+            flex: 1;
+            padding: 10px;a
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bike Showroom</h1>
+</header>
+
+<div class="container">
+    <div class="brands">
+        <h2>Bike Brands</h2>
+        <a href="#" onclick="showModels('brand1')">Brand 1</a>
+        <a href="#" onclick="showModels('brand2')">Brand 2</a>
+        <a href="#" onclick="showModels('brand3')">Brand 3</a>
+    </div>
+    <div class="models">
+        <h2>Bike Models</h2>
+        <div id="model-info">
+            <p>Select a brand to view models and specifications.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showModels(brand) {
+        const modelInfo = {
+            brand1: `<h3>Brand 1 Models</h3>
+                      <ul>
+                          <li>Model 1.1 - Specs: A, B, C</li>
+                          <li>Model 1.2 - Specs: D, E, F</li>
+                      </ul>`,
+            brand2: `<h3>Brand 2 Models</h3>
+                      <ul>
+                          <li>Model 2.1 - Specs: G, H, I</li>
+                          <li>Model 2.2 - Specs: J, K, L</li>
+                      </ul>`,
+            brand3: `<h3>Brand 3 Models</h3>
+                      <ul>
+                          <li>Model 3.1 - Specs: M, N, O</li>
+                          <li>Model 3.2 - Specs: P, Q, R</li>
+                      </ul>`
+        };
+
+        document.getElementById('model-info').innerHTML = modelInfo[brand] || '<p>No models available.</p>';
+    }
+</script>
+
+</body>
+</html>

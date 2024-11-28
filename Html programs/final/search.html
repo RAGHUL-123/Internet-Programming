@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Search - Home Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><center>
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKRQUGBo1Q0zAHg-YBYasuER1sIgGocuVMLg&s" alt="Home Finder Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="saved-searches.html">Saved Searches</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-page">
+        <!-- Search Header -->
+        <section class="search-header">
+            <h1>Find Your Perfect Property</h1>
+            <p>Use the filters below to narrow down your search and discover your dream home.</p>
+        </section>
+
+        <!-- Search Filters Section -->
+        <section class="filters-section">
+            <form action="search-results.html" method="GET" class="search-form">
+                <div class="search-field">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Enter city, neighborhood, or zip code">
+                </div>
+                
+                <div class="search-field">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type" name="property_type">
+                        <option value="all">All Types</option>
+                        <option value="flat">Flat</option>
+                        <option value="villa">Villa</option>
+                        <option value="small-house">Small House</option>
+                        <option value="townhouse">Townhouse</option>
+                        <option value="penthouse">Penthouse</option>
+                        <option value="bungalow">Bungalow</option>
+                        <option value="studio">Studio</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="price-range">Price Range</label>
+                    <input type="number" id="min-price" name="min_price" placeholder="Min Price">
+                    <input type="number" id="max-price" name="max_price" placeholder="Max Price">
+                </div>
+
+                <div class="search-field">
+                    <label for="bedrooms">Bedrooms</label>
+                    <select id="bedrooms" name="bedrooms">
+                        <option value="any">Any</option>
+                        <option value="1">1 Bedroom</option>
+                        <option value="2">2 Bedrooms</option>
+                        <option value="3">3 Bedrooms</option>
+                        <option value="4">4+ Bedrooms</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="bathrooms">Bathrooms</label>
+                    <select id="bathrooms" name="bathrooms">
+                        <option value="any">Any</option>
+                        <option value="1">1 Bathroom</option>
+                        <option value="2">2 Bathrooms</option>
+                        <option value="3">3 Bathrooms</option>
+                        <option value="4">4+ Bathrooms</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="sort-by">Sort By</label>
+                    <select id="sort-by" name="sort_by">
+                        <option value="relevance">Relevance</option>
+                        <option value="price-low-high">Price: Low to High</option>
+                        <option value="price-high-low">Price: High to Low</option>
+                        <option value="newest">Newest Listings</option>
+                    </select>
+                </div>
+
+                <div class="search-button">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Featured Properties Section -->
+        <section class="featured-properties">
+            <h2>Featured Properties</h2>
+            
+            <!-- Property 1 -->
+            <div class="property-card">
+                <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Luxury Villa">
+                <h3>Luxury Villa</h3>
+                <p>Address: 123 Grand Ave, Cityville</p>
+                <p>Price: $1,500,000</p>
+                <button>View Details</button>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="property-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2r0_w7z8IzM-FG708zlrW4gaWHFol6h8DGQ&s" alt="Modern Apartment">
+                <h3>Modern Apartment</h3>
+                <p>Address: 456 Elm St, Suburbia</p>
+                <p>Price: $300,000</p>
+                <button>View Details</button>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property-card">
+                <img src="https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg" alt="Penthouse">
+                <h3>City Penthouse</h3>
+                <p>Address: 789 Skyline Blvd, Metropolis</p>
+                <p>Price: $2,200,000</p>
+                <button>View Details</button>
+            </div>
+
+            <!-- Property 4 -->
+            <div class="property-card">
+                <img src="https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg" alt="Bungalow">
+                <h3>Cozy Bungalow</h3>
+                <p>Address: 321 Oak Rd, Countryside</p>
+                <p>Price: $450,000</p>
+                <button>View Details</button>
+            </div>
+
+            <!-- Property 5 -->
+            <div class="property-card">
+                <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg" alt="Studio Apartment">
+                <h3>Studio Apartment</h3>
+                <p>Address: 654 Maple St, Downtown</p>
+                <p>Price: $150,000</p>
+                <button>View Details</button>
+            </div>
+
+            <!-- Property 6 -->
+            <div class="property-card">
+                <img src="https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg" alt="Townhouse">
+                <h3>Family Townhouse</h3>
+                <p>Address: 890 Palm Dr, Suburbia</p>
+                <p>Price: $800,000</p>
+                <button>View Details</button>
+            </div>
+
+            <!-- Additional featured properties can go here -->
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Home Finder. All Rights Reserved.</p>
+    </footer></center>
+</body>
+</html>
